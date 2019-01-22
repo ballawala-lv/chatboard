@@ -1,0 +1,11 @@
+type Room @model {
+  id: ID!
+  name: String!
+  messages: [Message] @connection(name: "RoomMessages")
+}
+type Message @model {
+  id: ID!
+  user: String!
+  message: String!
+  room: Room @connection(name: "RoomMessages")
+}

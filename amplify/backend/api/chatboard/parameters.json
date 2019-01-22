@@ -1,0 +1,7 @@
+{
+    "AppSyncApiName": "chatboard",
+    "schemaGraphql": "s3://chatboard-20190120203032-deployment/amplify-appsync-files/schema.graphql.1548038281525",
+    "ResolverBucket": "chatboard-20190120203032-deployment",
+    "ResolverRootKey": "amplify-appsync-files",
+    "DeploymentTimestamp": "1548038281525"
+}

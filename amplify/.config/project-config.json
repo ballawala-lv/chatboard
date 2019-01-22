@@ -1,0 +1,20 @@
+{
+    "projectName": "chatboard",
+    "projectPath": "/Users/bilal/Development/chatboard",
+    "defaultEditor": "code",
+    "frontendHandler": {
+        "javascript": "/Users/bilal/.nvm/versions/node/v8.15.0/lib/node_modules/@aws-amplify/cli/node_modules/amplify-frontend-javascript"
+    },
+    "javascript": {
+        "framework": "react",
+        "config": {
+            "SourceDir": "src",
+            "DistributionDir": "build",
+            "BuildCommand": "npm run-script build",
+            "StartCommand": "npm run-script start"
+        }
+    },
+    "providers": {
+        "awscloudformation": "/Users/bilal/.nvm/versions/node/v8.15.0/lib/node_modules/@aws-amplify/cli/node_modules/amplify-provider-awscloudformation"
+    }
+}

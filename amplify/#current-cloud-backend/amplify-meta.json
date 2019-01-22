@@ -1,0 +1,71 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "chatboard-20190120203032-authRole",
+			"UnauthRoleArn": "arn:aws:iam::614167019250:role/chatboard-20190120203032-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::614167019250:role/chatboard-20190120203032-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "chatboard-20190120203032-deployment",
+			"UnauthRoleName": "chatboard-20190120203032-unauthRole",
+			"StackName": "chatboard-20190120203032",
+			"StackId": "arn:aws:cloudformation:us-east-1:614167019250:stack/chatboard-20190120203032/251195b0-1d1c-11e9-b1bf-0ec11b444504"
+		}
+	},
+	"auth": {
+		"cognito16ad792c": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/chatboard-20190120203032-deployment/amplify-cfn-templates/auth/cognito16ad792c-cloudformation-template.yml",
+				"logicalId": "authcognito16ad792c"
+			},
+			"lastPushTimeStamp": "2019-01-21T02:40:41.731Z",
+			"output": {
+				"AppClientSecret": "35d2tumfghojchdlem7cpj9elfcnksp537fnsvi9rp7gsq7n58k",
+				"UserPoolId": "us-east-1_N2ltlsQpB",
+				"AppClientIDWeb": "7v1gmti16qfvug5g1qn5l86r4e",
+				"AppClientID": "598bb7ovpntteka9if8d9oncek",
+				"IdentityPoolId": "us-east-1:b133f95b-dc68-4dd9-87a8-410da4071413",
+				"IdentityPoolName": "cognito16ad792c_identitypool_16ad792c",
+				"UserPoolName": "cognito16ad792c_userpool_16ad792c"
+			},
+			"lastPushDirHash": "Q4Wvvmlyi0ZsJY93C2bdWlrSWP4="
+		}
+	},
+	"api": {
+		"chatboard": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"securityType": "API_KEY",
+				"GraphQLAPIIdOutput": "g3lfencq6vfg7nfga42smt4ula",
+				"GraphQLAPIEndpointOutput": "https://vkyu4k524bhr5dv4c2xlcfnolm.appsync-api.us-east-1.amazonaws.com/graphql",
+				"GraphQLAPIKeyOutput": "da2-q3ndsvolszhgximnsyysn222ui"
+			},
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/chatboard-20190120203032-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apichatboard"
+			},
+			"lastPushTimeStamp": "2019-01-21T02:40:42.634Z",
+			"lastPushDirHash": "TrPz2dNbWTGHB9NlUwQYdTCHYoQ="
+		}
+	},
+	"hosting": {
+		"S3AndCloudFront": {
+			"service": "S3AndCloudFront",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/chatboard-20190120203032-deployment/amplify-cfn-templates/hosting/template.json",
+				"logicalId": "hostingS3AndCloudFront"
+			},
+			"lastPushTimeStamp": "2019-01-21T02:40:41.733Z",
+			"output": {
+				"S3BucketSecureURL": "https://chatboard-20190120205109-hostingbucket.s3.amazonaws.com",
+				"WebsiteURL": "http://chatboard-20190120205109-hostingbucket.s3-website-us-east-1.amazonaws.com",
+				"Region": "us-east-1",
+				"HostingBucketName": "chatboard-20190120205109-hostingbucket"
+			},
+			"lastPushDirHash": "6uEafh8Trloxjy+swfy/loWt4+8="
+		}
+	}
+}
